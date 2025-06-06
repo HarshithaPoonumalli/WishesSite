@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="sky">
+  <div class="balloon red"></div>
+  <div class="balloon blue"></div>
+  <div class="balloon green"></div>
+  <div class="balloon yellow"></div>
+</div>
+
+<div class="card">
+  <h1>🎂 Happy Birthday, Superstar! 🎈</h1>
+  <img src="assets/ai-pic.jpg" alt="AI Birthday Pic" class="ai-pic" />
+  <p>Wishing you a year filled with laughter, love, and success! 💖</p>
+  <button onclick="showWish()">🎁 Open Gift</button>
+  <button onclick="playMusic()">🎵 Play Music</button>
+</div>
+
+<div id="popup" class="popup hidden">
+  <p>🎉 Surprise! You're truly special. Here’s to an amazing journey ahead! 🥳</p>
+  <button onclick="closeWish()">Close</button>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>

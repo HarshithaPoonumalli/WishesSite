@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #fdf6f0, #ffdde1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.card {
+  margin-top: 80px;
+  background: #fff;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.ai-pic {
+  width: 100%;
+  border-radius: 15px;
+  margin: 1em 0;
+}
+
+button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e91e63;
+}
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  background: #fff;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0; transform: translateY(-20px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+.sky {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.balloon {
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  animation: float 10s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+.red { background: red; left: 10%; animation-delay: 0s; }
+.blue { background: blue; left: 30%; animation-delay: 2s; }
+.green { background: green; left: 50%; animation-delay: 4s; }
+.yellow { background: yellow; left: 70%; animation-delay: 6s; }
+
+@keyframes float {
+  0% { bottom: -100px; }
+  100% { bottom: 110%; }
+}
